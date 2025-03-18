@@ -44,7 +44,7 @@ const App: React.FC = () => (
         </IonTitle>
       </IonToolbar>
     </IonHeader>
-    <IonContent style={{ backgroundColor: '#f0f8ff' }}>
+    <IonContent style={{ '--ion-background-color': '#f0f8ff' }}>
       <h1>
         Welcome to Bootcamp
       </h1>
