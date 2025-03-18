@@ -1,5 +1,5 @@
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
+import { IonApp, IonContent, IonFooter, IonHeader, IonRouterOutlet, IonTitle, IonToolbar, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 
@@ -37,16 +37,21 @@ setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
+    <IonHeader>
+      <IonToolbar>
+        <IonTitle>
+          Welcome, Iniakpokeikiye
+        </IonTitle>
+      </IonToolbar>
+    </IonHeader>
+    <IonContent style={{ backgroundColor: '#f0f8ff' }}>
+      <h1>
+        Welcome to Bootcamp
+      </h1>
+    </IonContent>
+    <IonFooter>
+      Day 1 Assigment
+    </IonFooter>
   </IonApp>
 );
 
